@@ -1,4 +1,4 @@
-# 🔮 The Orba Ecosystem — Blueprint & Vision
+# 🔮 The Orba Ecosystem
 
 Bienvenue dans l'écosystème d'**Orba OS**, une suite logicielle d'assistants personnels souverains, cognitifs, sécurisés et multimodaux. Cet écosystème unifie l'expérience de l'agent personnel intelligent sur l'ensemble de vos appareils (mobile et ordinateur).
 
