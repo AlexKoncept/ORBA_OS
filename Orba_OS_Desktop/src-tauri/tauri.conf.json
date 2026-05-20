@@ -1,0 +1,32 @@
+{
+  "productName": "OrbaSphere",
+  "version": "3.0.0",
+  "identifier": "com.orba.desktop",
+  "build": {
+    "frontendDist": "../frontend",
+    "devUrl": "../frontend"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "OrbaSphere",
+        "width": 300,
+        "height": 300,
+        "resizable": false,
+        "decorations": false,
+        "transparent": true,
+        "alwaysOnTop": true,
+        "center": true,
+        "visible": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all"
+  }
+}

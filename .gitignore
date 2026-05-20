@@ -1,0 +1,49 @@
+# Prerequisites
+*.egg
+*.egg-info
+*.log
+
+# Environment files (exclude local API keys and configuration)
+.env
+.env.*
+!.env.example
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python Virtual Environment
+venv/
+.venv/
+env/
+.env/
+
+# Node / JS dependencies
+node_modules/
+.npm
+/dist
+/build
+
+# Tauri / Rust target
+src-tauri/target/
+
+# Local databases and encrypted records
+Orba_OS_Desktop/backend/orba_memory.enc
+Orba_OS_Desktop/backend/scheduled_tasks.json
+Orba_OS_Desktop/backend/models/*.onnx
+Orba_OS_Desktop/backend/models/*.bin
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Android build outputs & local configuration
+Orba_OS_Mobile/.gradle/
+Orba_OS_Mobile/build/
+Orba_OS_Mobile/local.properties
+Orba_OS_Mobile/.kotlin/
+Orba_OS_Mobile/*.iml
+Orba_OS_Mobile/.idea/
+Orba_OS_Mobile/captures/

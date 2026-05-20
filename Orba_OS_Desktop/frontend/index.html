@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orba OS Desktop - Console</title>
+    <!-- FontAwesome & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar Settings -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fa-solid fa-robot logo-icon"></i>
+                <h2>ORBA <span>DESKTOP</span></h2>
+            </div>
+            
+            <div class="settings-group">
+                <h3>Fournisseur IA</h3>
+                <select id="providerSelect" class="styled-select">
+                    <option value="gemini">Google Gemini</option>
+                    <option value="ollama" selected>Ollama (Local)</option>
+                    <option value="openai">OpenAI (ChatGPT)</option>
+                    <option value="claude">Anthropic Claude</option>
+                </select>
+            </div>
+
+            <div class="settings-group">
+                <h3>Modèle</h3>
+                <input type="text" id="modelInput" class="styled-input" value="gemma" placeholder="ex: gemma, gpt-4, gemini-1.5-flash">
+            </div>
+
+            <div class="settings-group connection-status-wrapper">
+                <h3>Statut de Connexion</h3>
+                <div class="status-indicator disconnected" id="connectionStatus">
+                    <span class="status-dot"></span> <span class="status-text">Hors ligne</span>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <p>Conçu par <strong>Alex Koncept</strong></p>
+                <p class="v-tag">v3.0.0-desktop</p>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            <!-- Center Sphere Area -->
+            <div class="sphere-section">
+                <div class="sphere-container">
+                    <canvas id="orbaSphereCanvas"></canvas>
+                    <div class="sphere-glow" id="sphereGlow"></div>
+                </div>
+                <div class="status-tag" id="stateTag">
+                    <span class="indicator-dot state-idle"></span> Orba est en veille
+                </div>
+            </div>
+
+            <!-- Chat & Terminal Console Area -->
+            <div class="console-section">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="title">Orba OS Live Terminal</span>
+                    </div>
+                    <div class="terminal-body" id="terminalOutput">
+                        <p class="term-line system"><span class="t-badge">[SYSTEM]</span> Démarrage de la console de bureau...</p>
+                        <p class="term-line system"><span class="t-badge">[SYSTEM]</span> En attente de connexion avec le backend (ws://127.0.0.1:8000/ws)...</p>
+                    </div>
+                </div>
+
+                <!-- Input Chat Bar -->
+                <div class="input-area">
+                    <input type="text" id="chatInput" placeholder="Saisissez une commande ou posez une question..." disabled>
+                    <button id="sendBtn" class="send-btn" disabled><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal for Guardrail Approvals -->
+    <div class="modal-overlay" id="approvalModal">
+        <div class="approval-card">
+            <div class="card-header">
+                <i class="fa-solid fa-triangle-exclamation warn-icon"></i>
+                <h2>Autorisation Requise</h2>
+            </div>
+            <div class="card-body">
+                <p>L'assistant intelligent d'Orba OS tente d'exécuter une action critique sur votre ordinateur :</p>
+                <div class="tool-info-box">
+                    <p><strong>Action :</strong> <span id="modalToolName">delete_file</span></p>
+                    <p><strong>Paramètres :</strong></p>
+                    <pre><code id="modalToolParams">{"filepath": "C:\\Windows\\system32\\config"}</code></pre>
+                </div>
+                <p class="warning-text"><strong>Attention :</strong> Cette action peut être irréversible. Êtes-vous sûr de vouloir l'autoriser ?</p>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-secondary" id="rejectBtn">Refuser <i class="fa-solid fa-xmark"></i></button>
+                <button class="btn btn-primary" id="approveBtn">Autoriser <i class="fa-solid fa-check"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
