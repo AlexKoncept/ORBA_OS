@@ -10,11 +10,18 @@
   <img src="https://img.shields.io/badge/Architecture-Offline--First%20%7C%20Agentic-black?style=for-the-badge" alt="Architecture">
 </p>
 
+<p align="center">
+  <a href="#-version-française"><b>Version Française 🇫🇷</b></a> • 
+  <a href="#-english-version"><b>English Version 🇬🇧</b></a>
+</p>
+
 ---
+
+## 🇫🇷 Version Française
 
 Bienvenue dans l'écosystème d'**Orba OS**, une suite logicielle d'assistants personnels souverains, cognitifs, sécurisés et multimodaux. Cet écosystème unifie l'expérience de l'agent personnel intelligent sur l'ensemble de vos appareils, du mobile à l'ordinateur de bureau.
 
-## 🗺️ Architecture de l'Écosystème
+### 🗺️ Architecture de l'Écosystème
 
 L'écosystème orchestre trois briques complémentaires et interconnectées :
 
