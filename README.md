@@ -99,6 +99,7 @@ Welcome to The Orba Ecosystem, a software suite of sovereign, cognitive, secure,
 🗺️ Ecosystem Architecture
 The ecosystem coordinates three complementary and interconnected components:
 
+```mermaid
 graph TD
     A["ORBA ECOSYSTEM (Sovereign & Agentic)"] --> B["Orba OS Mobile (Android App)"]
     A --> C["Orba OS Desktop (Tauri / FastAPI)"]
