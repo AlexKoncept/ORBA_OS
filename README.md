@@ -92,28 +92,13 @@ Transparence des Décisions (ReAct Log) : L'agent affiche ouvertement ses "pens�
 
 Contrôle Utilisateur (Zero-Trust Guardrails) : Aucune modification critique (suppression, modification de fichiers système, exécution de scripts) ne peut être effectuée sans une approbation explicite (bouton à l'écran ou réponse par mot-clé SMS/WhatsApp).
 
-🇬🇧 English Version
+## 🇬🇧 English Version
+
 Welcome to The Orba Ecosystem, a software suite of sovereign, cognitive, secure, and multimodal personal assistants. This ecosystem unifies the intelligent agent experience across all your devices, from mobile smartphones to desktop computers.
 
 🗺️ Ecosystem Architecture
 The ecosystem coordinates three complementary and interconnected components:
 
-Extrait de code
-graph TD
-    A["ORBA ECOSYSTEM (Sovereign & Agentic)"] --> B["Orba OS Mobile (Android App)"]
-    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
-    A --> D["Orba OS Website (Landing Page Showcase)"]
-
-    B --> B1["Local JNI C++ / Kotlin Model"]
-    B --> B2["Local Text-to-Speech (Piper JNI)"]
-    B --> B3["OrbaSphere Mobile UI"]
-
-    C --> C1["Python ReAct Cognitive Loop"]
-    C --> C2["WebGL / Canvas Visualizer"]
-    C --> C3["Gateways (Local Mic, Telegram, WhatsApp)"]
-
-    D --> D1["Interactive Roadmap"]
-    D --> D2["Aesthetics V3 Glassmorphism"]
 🛠️ Project Components
 📱 1. Orba OS Mobile
 Platform: Android (Native Kotlin, C++ NDK).
