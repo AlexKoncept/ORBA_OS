@@ -25,22 +25,6 @@ Bienvenue dans l'écosystème d'**Orba OS**, une suite logicielle d'assistants p
 
 L'écosystème orchestre trois briques complémentaires et interconnectées :
 
-```mermaid
-graph TD
-    A["ORBA ECOSYSTEM (Souverain & Agentique)"] --> B["Orba OS Mobile (Android App)"]
-    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
-    A --> D["Orba OS Website (Landing Page Showcase)"]
-
-    B --> B1["Modèle Local JNI C++ / Kotlin"]
-    B --> B2["Synthèse Vocale locale (Piper JNI)"]
-    B --> B3["OrbaSphere Mobile UI"]
-
-    C --> C1["Boucle Cognitive ReAct Python"]
-    C --> C2["Visualiseur WebGL / Canvas"]
-    C --> C3["Gateways (Micro local, Telegram, WhatsApp)"]
-
-    D --> D1["Roadmap Interactive"]
-    D --> D2["Aesthetics V3 Glassmorphism"]
 
 ## 🌍 Overview
 
@@ -145,7 +129,8 @@ Le système expose les raisonnements, outils et intentions de l'agent via un jou
 
 Aucune action système critique ne peut être exécutée sans validation explicite de l'utilisateur.
 
-🇬🇧 English Version
+## 🇬🇧 English Version 
+
 🧠 Overview
 
 Welcome to The Orba Ecosystem, a software suite of sovereign, cognitive, secure, and multimodal AI assistants.
