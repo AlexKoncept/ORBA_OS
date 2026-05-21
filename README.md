@@ -1,12 +1,22 @@
 # 🔮 The Orba Ecosystem
 
-Bienvenue dans l'écosystème d'**Orba OS**, une suite logicielle d'assistants personnels souverains, cognitifs, sécurisés et multimodaux. Cet écosystème unifie l'expérience de l'agent personnel intelligent sur l'ensemble de vos appareils (mobile et ordinateur).
+<p align="center">
+  <img src="https://orba-ecosystem-project-byalexkoncept.netlify.app/logo.png" alt="Orba OS Logo" width="200" style="border-radius: 50%;"/>
+</p>
+
+<p align="center">
+  <a href="https://orba-ecosystem-project-byalexkoncept.netlify.app/"><img src="https://img.shields.io/badge/Website-Live-f03ea5?style=for-the-badge&logo=netlify" alt="Website"></a>
+  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20Windows%20%7C%20macOS%20%7C%20Linux-410056?style=for-the-badge" alt="Platforms">
+  <img src="https://img.shields.io/badge/Architecture-Offline--First%20%7C%20Agentic-black?style=for-the-badge" alt="Architecture">
+</p>
 
 ---
 
+Bienvenue dans l'écosystème d'**Orba OS**, une suite logicielle d'assistants personnels souverains, cognitifs, sécurisés et multimodaux. Cet écosystème unifie l'expérience de l'agent personnel intelligent sur l'ensemble de vos appareils, du mobile à l'ordinateur de bureau.
+
 ## 🗺️ Architecture de l'Écosystème
 
-L'écosystème se divise en trois projets complémentaires et harmonisés :
+L'écosystème orchestre trois briques complémentaires et interconnectées :
 
 ```mermaid
 graph TD
