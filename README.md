@@ -99,22 +99,24 @@ Welcome to The Orba Ecosystem, a software suite of sovereign, cognitive, secure,
 🗺️ Ecosystem Architecture
 The ecosystem coordinates three complementary and interconnected components:
 
+
 ```mermaid
 graph TD
-    A["ORBA ECOSYSTEM (Sovereign & Agentic)"] --> B["Orba OS Mobile (Android App)"]
+    A["ORBA ECOSYSTEM (Souverain & Agentique)"] --> B["Orba OS Mobile (Android App)"]
     A --> C["Orba OS Desktop (Tauri / FastAPI)"]
     A --> D["Orba OS Website (Landing Page Showcase)"]
 
-    B --> B1["Local JNI C++ / Kotlin Model"]
-    B --> B2["Local Text-to-Speech (Piper JNI)"]
+    B --> B1["Modèle Local JNI C++ / Kotlin"]
+    B --> B2["Synthèse Vocale locale (Piper JNI)"]
     B --> B3["OrbaSphere Mobile UI"]
 
-    C --> C1["Python ReAct Cognitive Loop"]
-    C --> C2["WebGL / Canvas Visualizer"]
-    C --> C3["Gateways (Local Mic, Telegram, WhatsApp)"]
+    C --> C1["Boucle Cognitive ReAct Python"]
+    C --> C2["Visualiseur WebGL / Canvas"]
+    C --> C3["Gateways (Micro local, Telegram, WhatsApp)"]
 
-    D --> D1["Interactive Roadmap"]
+    D --> D1["Roadmap Interactive"]
     D --> D2["Aesthetics V3 Glassmorphism"]
+
 
 🛠️ Project Components
 📱 1. Orba OS Mobile
