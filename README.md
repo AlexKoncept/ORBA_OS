@@ -1,7 +1,7 @@
 # 🔮 The Orba Ecosystem
 
 <p align="center">
-  <img src="https://orba-ecosystem-project-byalexkoncept.netlify.app/logo.png" alt="Orba OS Logo" width="200" style="border-radius: 50%;"/>
+  <img src="orba_ecosystem.webp" alt="Orba OS Logo" width="220" style="border-radius: 50%;"/>
 </p>
 
 <p align="center">
