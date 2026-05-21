@@ -99,6 +99,22 @@ Welcome to The Orba Ecosystem, a software suite of sovereign, cognitive, secure,
 🗺️ Ecosystem Architecture
 The ecosystem coordinates three complementary and interconnected components:
 
+graph TD
+    A["ORBA ECOSYSTEM (Sovereign & Agentic)"] --> B["Orba OS Mobile (Android App)"]
+    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
+    A --> D["Orba OS Website (Landing Page Showcase)"]
+
+    B --> B1["Local JNI C++ / Kotlin Model"]
+    B --> B2["Local Text-to-Speech (Piper JNI)"]
+    B --> B3["OrbaSphere Mobile UI"]
+
+    C --> C1["Python ReAct Cognitive Loop"]
+    C --> C2["WebGL / Canvas Visualizer"]
+    C --> C3["Gateways (Local Mic, Telegram, WhatsApp)"]
+
+    D --> D1["Interactive Roadmap"]
+    D --> D2["Aesthetics V3 Glassmorphism"]
+
 🛠️ Project Components
 📱 1. Orba OS Mobile
 Platform: Android (Native Kotlin, C++ NDK).
@@ -143,6 +159,10 @@ Objective: An interactive showcase website displaying the project's vision, inte
 Every application within the Orba ecosystem is built upon three unyielding pillars:
 
 Local-First Priority: Local LLMs (via Ollama on desktop or optimized architectures on mobile) and local STT/TTS engines (Vosk, Piper) are strictly prioritized to ensure absolute data privacy.
+
+Decision Transparency (ReAct Log): The agent breaks the traditional "black box" effect by openly displaying its internal thoughts, logical reasoning, and the tools it plans to invoke before acting.
+
+User Control (Zero-Trust Guardrails): No critical system changes (file modification, deletion, script execution) can occur without explicit user consent, validated either locally on-screen or remotely via encrypted WhatsApp/Telegram keywords.
 
 Decision Transparency (ReAct Log): The agent breaks the traditional "black box" effect by openly displaying its internal thoughts, logical reasoning, and the tools it plans to invoke before acting.
 
