@@ -17,210 +17,104 @@
 
 ---
 
-## 🇫🇷 Version Française
+🇫🇷 Version Française
+Bienvenue dans l'écosystème d'Orba OS, une suite logicielle d'assistants personnels souverains, cognitifs, sécurisés et multimodaux. Cet écosystème unifie l'expérience de l'agent personnel intelligent sur l'ensemble de vos appareils, du mobile à l'ordinateur de bureau.
 
-Bienvenue dans l'écosystème d'**Orba OS**, une suite logicielle d'assistants personnels souverains, cognitifs, sécurisés et multimodaux. Cet écosystème unifie l'expérience de l'agent personnel intelligent sur l'ensemble de vos appareils, du mobile à l'ordinateur de bureau.
-
-### 🗺️ Architecture de l'Écosystème
-
+🗺️ Architecture de l'Écosystème
 L'écosystème orchestre trois briques complémentaires et interconnectées :
 
+🛠️ Les Composants du Projet 📱 1. Orba OS Mobile Plateforme : Android (Kotlin native, NDK C++).
 
-## 🌍 Overview
+Objectif : Un assistant de poche sécurisé, capable de s'exécuter hors-ligne sur le processeur neuronal (NPU) du smartphone.
 
-**The Orba Ecosystem** is a unified ecosystem of sovereign personal AI assistants designed to operate securely across mobile and desktop environments.
+Composants clés :
 
-The project focuses on:
+Reconnaissance et synthèse vocale locale via l'intégration JNI de Piper TTS.
 
-- 🔒 Privacy-first local AI
-- 🧠 Cognitive autonomous agents
-- 📡 Offline-first architecture
-- 🎤 Local voice interaction
-- 🖥️ Cross-platform interoperability
-- 🛡️ Human-in-the-loop security
+Synchronisation asynchrone des flux audios et protection de la RAM.
 
----
+Import Local Manuel : Sélecteur système pour importer manuellement les modèles (gemma.bin et voix Piper) hors-ligne.
 
-# 🇫🇷 Version Française
+Classifieur vocal normalisé : Tokenisation et classification d'intentions vocales insensible aux accents (normalisation Unicode).
 
-## 🧠 Présentation
+🖥️ 2. Orba OS Desktop Plateforme : Windows, macOS, Linux (Tauri v2 / FastAPI / Python).
 
-Bienvenue dans **The Orba Ecosystem**, une suite logicielle d'assistants personnels souverains, cognitifs, sécurisés et multimodaux.
+Objectif : Un assistant de bureau flottant et autonome, capable d'exécuter des outils système sur votre ordinateur en toute sécurité.
 
-L'écosystème unifie l'expérience d'un agent intelligent personnel sur tous vos appareils : smartphone, ordinateur de bureau et web.
+Composants clés :
 
----
+OrbaSphere : Widget circulaire WebGL transparent, sans bordures, flottant au-dessus du bureau.
 
-## 🗺️ Architecture de l'Écosystème
+Système Guardrails (Human-in-the-loop) : Interception automatique des commandes système critiques avec demandes d'autorisation.
 
-```mermaid
-graph TD
-    A["ORBA ECOSYSTEM (Souverain & Agentique)"] --> B["Orba OS Mobile (Android App)"]
-    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
-    A --> D["Orba OS Website (Landing Page Showcase)"]
+Passerelles Multi-Canaux : Pilotage et validation à distance via Telegram ou WhatsApp (Twilio).
 
-    B --> B1["Modèle Local JNI C++ / Kotlin"]
-    B --> B2["Synthèse Vocale Locale (Piper JNI)"]
-    B --> B3["OrbaSphere Mobile UI"]
+STT & TTS locaux : Moteurs hors-ligne Vosk (reconnaissance) et Piper (parole) avec synchronisation visuelle (RMS).
 
-    C --> C1["Boucle Cognitive ReAct Python"]
-    C --> C2["Visualiseur WebGL / Canvas"]
-    C --> C3["Gateways (Micro local, Telegram, WhatsApp)"]
+Planificateur & Notifications : Boucle de tâches asynchrones en arrière-plan (scheduled_tasks.json) et système de notifications push natives Windows (via PowerShell Toast).
 
-    D --> D1["Roadmap Interactive"]
-    D --> D2["Glassmorphism V3"]
+Vision Agent : Capture et analyse sémantique multimodale de l'écran en direct via Pillow et Gemini 1.5.
 
-🛠️ Composants du Projet
-📱 1. Orba OS Mobile
-🔹 Plateforme
+🌐 3. Orba OS Website Plateforme : Web (HTML5, Vanilla CSS, JS).
 
-Android (Kotlin natif + C++ NDK)
+Objectif : Vitrine technologique interactive présentant le projet, sa feuille de route (Roadmap interactive), ses phases de déploiement et ses liens de téléchargement.
 
-🔹 Objectif
+🔒 Charte de Souveraineté & de Sécurité Chaque application de l'écosystème Orba respecte trois piliers fondamentaux :
 
-Créer un assistant personnel sécurisé capable de fonctionner entièrement hors-ligne directement sur le smartphone.
+Priorité au Local (Offline-First) : Les modèles LLM locaux (via Ollama sur PC ou modèles optimisés sur Mobile) et les modèles STT/TTS (Vosk, Piper) sont privilégiés pour garantir la confidentialité absolue de vos données.
 
-🔹 Fonctionnalités clés
-🎤 Reconnaissance et synthèse vocale locale via Piper JNI
-🧠 Exécution locale des modèles IA optimisés
-📦 Import manuel hors-ligne des modèles (gemma.bin, voix Piper)
-🧬 Classification vocale normalisée et résistante aux accents
-⚡ Optimisation mémoire et synchronisation audio asynchrone
-🖥️ 2. Orba OS Desktop
-🔹 Plateforme
+Transparence des Décisions (ReAct Log) : L'agent affiche ouvertement ses "pensées" (thoughts) et les outils qu'il s'apprête à accomplir, évitant l'effet "boîte noire".
 
-Windows • macOS • Linux
-(Tauri v2 + FastAPI + Python)
+Contrôle Utilisateur (Zero-Trust Guardrails) : Aucune modification critique (suppression, modification de fichiers système, exécution de scripts) ne peut être effectuée sans une approbation explicite (bouton à l'écran ou réponse par mot-clé SMS/WhatsApp).
 
-🔹 Objectif
+🇬🇧 English Version Welcome to The Orba Ecosystem, a software suite of sovereign, cognitive, secure, and multimodal personal assistants. This ecosystem unifies the intelligent agent experience across all your devices, from mobile smartphones to desktop computers.
 
-Créer un assistant de bureau autonome capable d'interagir avec le système en toute sécurité.
+🗺️ Ecosystem Architecture The ecosystem coordinates three complementary and interconnected components:
 
-🔹 Fonctionnalités clés
-🌐 OrbaSphere : widget WebGL flottant et transparent
-🛡️ Guardrails Human-in-the-loop
-📲 Passerelles Telegram & WhatsApp
-🎙️ STT/TTS locaux via Vosk & Piper
-🔔 Notifications système natives
-📅 Planificateur de tâches asynchrones
-👁️ Vision Agent multimodale (capture & analyse d'écran)
-🌐 3. Orba OS Website
-🔹 Plateforme
+🛠️ Project Components 📱 1. Orba OS Mobile Platform: Android (Native Kotlin, C++ NDK).
 
-HTML5 • CSS • JavaScript
+Objective: A secure pocket assistant designed to run fully offline on the smartphone's Neural Processing Unit (NPU).
 
-🔹 Objectif
+Key Features:
 
-Présenter l'univers Orba, la roadmap, les téléchargements et les démonstrations interactives.
+Local speech recognition and synthesis via the JNI integration of Piper TTS.
 
-🔒 Charte de Souveraineté & Sécurité
+Asynchronous synchronization of audio streams combined with advanced RAM optimization.
 
-Chaque composant de l'écosystème respecte trois piliers fondamentaux :
+Manual Local Import: Built-in system picker to manually import models (gemma.bin and Piper voices) entirely offline.
 
-🧩 Local-First
+Normalized Voice Classifier: Tokenization and intent classification built to be accent-resilient using strict Unicode normalization.
 
-Les modèles IA locaux (Ollama, modèles mobiles optimisés, Vosk, Piper) sont privilégiés afin de garantir une confidentialité maximale.
+🖥️ 2. Orba OS Desktop Platform: Windows, macOS, Linux (Tauri v2 / FastAPI / Python).
 
-🔍 Transparence
+Objective: A floating, autonomous desktop companion capable of executing system tasks securely on your computer.
 
-Le système expose les raisonnements, outils et intentions de l'agent via un journal de type ReAct Log.
+Key Features:
 
-🛡️ Zero-Trust Guardrails
+OrbaSphere: A transparent, borderless WebGL circular widget floating smoothly above your workspace.
 
-Aucune action système critique ne peut être exécutée sans validation explicite de l'utilisateur.
+Guardrails System (Human-in-the-loop): Automatic interception of critical system commands, halting operations until explicit user authorization is granted.
 
-## 🇬🇧 English Version 
+Multi-Channel Gateways: Remote orchestration and verification via Telegram or WhatsApp (powered by Twilio).
 
-🧠 Overview
+Local STT & TTS: Offline Vosk (recognition) and Piper (speech) engines with real-time visual syncing based on audio level (RMS).
 
-Welcome to The Orba Ecosystem, a software suite of sovereign, cognitive, secure, and multimodal AI assistants.
+Scheduler & Notifications: Background asynchronous task loop (scheduled_tasks.json) hooked into native system push notifications (via Windows PowerShell Toast).
 
-The ecosystem unifies the intelligent agent experience across smartphones, desktops, and the web.
+Vision Agent: Multimodal semantic capture and real-time screen analysis using Pillow and Gemini 1.5.
 
-🗺️ Ecosystem Architecture
-🛠️ Project Components
-📱 1. Orba OS Mobile
-🔹 Platform
+🌐 3. Orba OS Website Platform: Web (HTML5, Vanilla CSS, JS).
 
-Android (Native Kotlin + C++ NDK)
+Objective: An interactive showcase website displaying the project's vision, interactive roadmap, deployment phases, and download links.
 
-🔹 Objective
+🔒 Sovereignty & Security Charter Every application within the Orba ecosystem is built upon three unyielding pillars:
 
-A secure pocket AI assistant designed to run fully offline on the device.
+Local-First Priority: Local LLMs (via Ollama on desktop or optimized architectures on mobile) and local STT/TTS engines (Vosk, Piper) are strictly prioritized to ensure absolute data privacy.
 
-🔹 Key Features
-🎤 Local speech recognition & synthesis with Piper JNI
-🧠 Optimized local AI execution
-📦 Offline manual model import (gemma.bin, Piper voices)
-🧬 Accent-resilient voice intent classification
-⚡ Advanced memory & audio synchronization optimization
-🖥️ 2. Orba OS Desktop
-🔹 Platform
+Decision Transparency (ReAct Log): The agent breaks the traditional "black box" effect by openly displaying its internal thoughts, logical reasoning, and the tools it plans to invoke before acting.
 
-Windows • macOS • Linux
-(Tauri v2 + FastAPI + Python)
+User Control (Zero-Trust Guardrails): No critical system changes (file modification, deletion, script execution) can occur without explicit user consent, validated either locally on-screen or remotely via encrypted WhatsApp/Telegram keywords.
 
-🔹 Objective
-
-A floating autonomous desktop assistant capable of securely interacting with the operating system.
-
-🔹 Key Features
-🌐 OrbaSphere floating WebGL widget
-🛡️ Human-in-the-loop guardrails
-📲 Telegram & WhatsApp gateways
-🎙️ Offline STT/TTS using Vosk & Piper
-🔔 Native desktop notifications
-📅 Asynchronous task scheduler
-👁️ Multimodal screen analysis Vision Agent
-🌐 3. Orba OS Website
-🔹 Platform
-
-HTML5 • CSS • JavaScript
-
-🔹 Objective
-
-An interactive showcase presenting the Orba vision, roadmap, downloads, and demonstrations.
-
-🔒 Sovereignty & Security Charter
-
-Every component of the ecosystem is built around three core principles.
-
-🧩 Local-First AI
-
-Local AI models and offline STT/TTS engines are prioritized to ensure maximum privacy and sovereignty.
-
-🔍 Decision Transparency
-
-The assistant exposes its reasoning, intentions, and tools through a transparent ReAct-style log system.
-
-🛡️ Zero-Trust Guardrails
-
-No critical system action can occur without explicit user approval.
-
-🚀 Roadmap
- Orba OS Mobile Prototype
- Orba Ecosystem Landing Page
- Orba OS Desktop Alpha
- Local Multi-Agent Architecture
- Cross-device Synchronization
- Voice-to-Action Autonomous Workflows
- Open Plugin System
-📦 Technologies
-Category	Stack
-Mobile	Kotlin, JNI, C++
-Desktop	Tauri v2, Python, FastAPI
-AI	Ollama, Gemma, Gemini
-Voice	Piper, Vosk
-Frontend	HTML5, CSS3, JavaScript
-Visuals	WebGL, Canvas
-Messaging	Telegram API, Twilio
-👨‍💻 Author
-
-Developed by Alex Koncept
-
-🌐 Website: https://orba-ecosystem-project-byalexkoncept.netlify.app/
-🧠 Vision: Sovereign AI Ecosystems
-🔮 Project Family: Orba OS • HSK Engine • Alex Koncept
 📜 License
 
 This project is currently under a custom personal license.
