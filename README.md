@@ -44,6 +44,7 @@ graph TD
 ```
 
 🛠️ Les Composants du Projet
+
 📱 1. Orba OS Mobile
 Plateforme : Android (Kotlin native, NDK C++).
 
