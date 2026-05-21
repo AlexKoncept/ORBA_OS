@@ -1,24 +1,46 @@
 # 🔮 The Orba Ecosystem
 
 <p align="center">
-  <img src="orba_ecosystem.webp" alt="The Orba Ecosystem Logo" width="220"/>
+  <img src="orba_ecosystem.webp" alt="Orba OS Logo" width="220" style="border-radius: 50%;"/>
 </p>
 
 <p align="center">
-  <a href="https://orba-ecosystem-project-byalexkoncept.netlify.app/">
-    <img src="https://img.shields.io/badge/Website-Live-f03ea5?style=for-the-badge&logo=netlify" alt="Website">
-  </a>
-
+  <a href="https://orba-ecosystem-project-byalexkoncept.netlify.app/"><img src="https://img.shields.io/badge/Website-Live-f03ea5?style=for-the-badge&logo=netlify" alt="Website"></a>
   <img src="https://img.shields.io/badge/Platform-Android%20%7C%20Windows%20%7C%20macOS%20%7C%20Linux-410056?style=for-the-badge" alt="Platforms">
-
   <img src="https://img.shields.io/badge/Architecture-Offline--First%20%7C%20Agentic-black?style=for-the-badge" alt="Architecture">
 </p>
 
 <p align="center">
-  <b>Sovereign • Cognitive • Secure • Multimodal</b>
+  <a href="#-version-française"><b>Version Française 🇫🇷</b></a> • 
+  <a href="#-english-version"><b>English Version 🇬🇧</b></a>
 </p>
 
 ---
+
+## 🇫🇷 Version Française
+
+Bienvenue dans l'écosystème d'**Orba OS**, une suite logicielle d'assistants personnels souverains, cognitifs, sécurisés et multimodaux. Cet écosystème unifie l'expérience de l'agent personnel intelligent sur l'ensemble de vos appareils, du mobile à l'ordinateur de bureau.
+
+### 🗺️ Architecture de l'Écosystème
+
+L'écosystème orchestre trois briques complémentaires et interconnectées :
+
+```mermaid
+graph TD
+    A["ORBA ECOSYSTEM (Souverain & Agentique)"] --> B["Orba OS Mobile (Android App)"]
+    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
+    A --> D["Orba OS Website (Landing Page Showcase)"]
+
+    B --> B1["Modèle Local JNI C++ / Kotlin"]
+    B --> B2["Synthèse Vocale locale (Piper JNI)"]
+    B --> B3["OrbaSphere Mobile UI"]
+
+    C --> C1["Boucle Cognitive ReAct Python"]
+    C --> C2["Visualiseur WebGL / Canvas"]
+    C --> C3["Gateways (Micro local, Telegram, WhatsApp)"]
+
+    D --> D1["Roadmap Interactive"]
+    D --> D2["Aesthetics V3 Glassmorphism"]
 
 ## 🌍 Overview
 
