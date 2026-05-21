@@ -41,7 +41,6 @@ graph TD
 
     D --> D1["Roadmap Interactive"]
     D --> D2["Aesthetics V3 Glassmorphism"]
-```
 
 🛠️ Les Composants du Projet
 
