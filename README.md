@@ -17,31 +17,11 @@
 
 ---  
 
-## 🇫🇷 Version Française
+🇫🇷 Version Française
+Bienvenue dans l'écosystème d'Orba OS, une suite logicielle d'assistants personnels souverains, cognitifs, sécurisés et multimodaux. Cet écosystème unifie l'expérience de l'agent personnel intelligent sur l'ensemble de vos appareils, du mobile à l'ordinateur de bureau.
 
-Bienvenue dans l'écosystème d'**Orba OS**, une suite logicielle d'assistants personnels souverains, cognitifs, sécurisés et multimodaux. Cet écosystème unifie l'expérience de l'agent personnel intelligent sur l'ensemble de vos appareils, du mobile à l'ordinateur de bureau.
-
-### 🗺️ Architecture de l'Écosystème
-
+🗺️ Architecture de l'Écosystème
 L'écosystème orchestre trois briques complémentaires et interconnectées :
-
-```mermaid
-graph TD
-    A["ORBA ECOSYSTEM (Souverain & Agentique)"] --> B["Orba OS Mobile (Android App)"]
-    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
-    A --> D["Orba OS Website (Landing Page Showcase)"]
-
-    B --> B1["Modèle Local JNI C++ / Kotlin"]
-    B --> B2["Synthèse Vocale locale (Piper JNI)"]
-    B --> B3["OrbaSphere Mobile UI"]
-
-    C --> C1["Boucle Cognitive ReAct Python"]
-    C --> C2["Visualiseur WebGL / Canvas"]
-    C --> C3["Gateways (Micro local, Telegram, WhatsApp)"]
-
-    D --> D1["Roadmap Interactive"]
-    D --> D2["Aesthetics V3 Glassmorphism"]
-
 
 🛠️ Les Composants du Projet 📱 1. Orba OS Mobile Plateforme : Android (Kotlin native, NDK C++).
 
