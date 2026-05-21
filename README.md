@@ -15,7 +15,7 @@
   <a href="#-english-version"><b>English Version 🇬🇧</b></a>
 </p>
 
----
+--- 
 
 ## 🇫🇷 Version Française
 
