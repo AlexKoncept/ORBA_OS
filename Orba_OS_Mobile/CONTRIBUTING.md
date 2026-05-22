@@ -1,4 +1,4 @@
-# Contributing to Orba OS v3
+# Contributing to Orba OS Mobile 
 
 Thank you for your interest in contributing to **Orba OS v3**! We welcome and appreciate contributions of all kinds, including bug fixes, new tools, feature requests, and documentation improvements.
 
