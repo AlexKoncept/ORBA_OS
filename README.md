@@ -84,7 +84,7 @@ graph TD
     *   **Multi-Channel Gateways**: Control and remote validation via WhatsApp (Twilio) and Telegram.
     *   **Vision Agent & Scheduler**: Screen analysis via Gemini 1.5 & Pillow, background task scheduler (`scheduled_tasks.json`), and async Windows Toast Notifications.
 
-#### 3. 🌐 [Orba OS Website](./Orba_Ecosystem)
+#### 3. 🌐 [Orba OS Website](https://orbaproject-byalexkoncept.netlify.app/)
 *   **Platform**: Web (HTML5, Vanilla CSS, JS).
 *   **Objective**: Showcase web platform presenting the project, roadmap phases, and download links with a premium Glassmorphism design.
 *   **Link** : https://orbaproject-byalexkoncept.netlify.app/ 
