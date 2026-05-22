@@ -1,7 +1,7 @@
 # 🔮 The Orba Ecosystem / L'Écosystème Orba
 
 <p align="center">
-  <img src="./img/orba_os.png" alt="Orba OS Banner" width="650"/>
+  <img src="./orba_ecosystem.webp" alt="Orba OS Banner" width="650"/>
 </p>
 
 <p align="center">
