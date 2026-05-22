@@ -84,7 +84,7 @@ graph TD
     *   **Multi-Channel Gateways**: Control and remote validation via WhatsApp (Twilio) and Telegram.
     *   **Vision Agent & Scheduler**: Screen analysis via Gemini 1.5 & Pillow, background task scheduler (`scheduled_tasks.json`), and async Windows Toast Notifications.
 
-#### 3. 🌐 [Orba OS Website](https://orbaproject-byalexkoncept.netlify.app/)
+#### 3. 🌐 [Orba OS Website](https://orba-website-byalexkoncept.netlify.app/)
 *   **Platform**: Web (HTML5, Vanilla CSS, JS).
 *   **Objective**: Showcase web platform presenting the project, roadmap phases, and download links with a premium Glassmorphism design.
 *   **Link** : https://orbaproject-byalexkoncept.netlify.app/ 
@@ -209,7 +209,7 @@ graph TD
     *   **Passerelles Multi-Canaux** : Pilotage et validation d'actions à distance via WhatsApp (Twilio) et Telegram.
     *   **Vision & Planification** : Analyse d'écran via Gemini 1.5 & Pillow, planification de tâches d'arrière-plan (`scheduled_tasks.json`) et notifications Toast Windows natives.
 
-#### 3. 🌐 [Orba OS Website (Vitrine Web)](./Orba_Ecosystem)
+#### 3. 🌐 [Orba OS Website (Vitrine Web)](https://orba-website-byalexkoncept.netlify.app/)
 *   **Plateforme** : Web (HTML5, Vanilla CSS, JS).
 *   **Objectif** : Vitrine technologique interactive présentant le projet, sa feuille de route (Roadmap) et ses liens de téléchargement sous un style premium en Glassmorphism.
 *   **Lien** : https://orbaproject-byalexkoncept.netlify.app/ 
