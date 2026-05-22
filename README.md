@@ -87,7 +87,7 @@ graph TD
 #### 3. 🌐 [Orba OS Website](./Orba_Ecosystem)
 *   **Platform**: Web (HTML5, Vanilla CSS, JS).
 *   **Objective**: Showcase web platform presenting the project, roadmap phases, and download links with a premium Glassmorphism design.
-
+*   **Link** : https://orbaproject-byalexkoncept.netlify.app/ 
 ---
 
 ### Sovereignty & Security Charter
@@ -212,7 +212,7 @@ graph TD
 #### 3. 🌐 [Orba OS Website (Vitrine Web)](./Orba_Ecosystem)
 *   **Plateforme** : Web (HTML5, Vanilla CSS, JS).
 *   **Objectif** : Vitrine technologique interactive présentant le projet, sa feuille de route (Roadmap) et ses liens de téléchargement sous un style premium en Glassmorphism.
-
+*   **Lien** : https://orbaproject-byalexkoncept.netlify.app/ 
 ---
 
 ### Charte de Souveraineté & Sécurité
