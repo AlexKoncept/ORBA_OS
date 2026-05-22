@@ -1,4 +1,4 @@
-# Orba OS Mobile
+# Orba OS (Mobile Edition)
 
 [🇫🇷 Version Française](#-version-française) | [🇬🇧 English Version](#-english-version)
 
