@@ -1,4 +1,4 @@
-# Orba OS Desktop (Concept & Prototype)
+# Orba OS (Desktop Edition)
 
 Ce dossier contient le prototype d'**Orba OS Desktop**, une déclinaison pour ordinateurs (Windows, macOS, Linux) de l'assistant personnel cognitif Orba. Il implémente une interface web enrichie, la saisie hybride (clavier/voix), un visualiseur 3D interactif de l'OrbaSphere, et un système d'autorisation de sécurité (Guardrails / Human-in-the-loop).
 
