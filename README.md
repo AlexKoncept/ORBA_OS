@@ -46,22 +46,21 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 
 ```mermaid
 graph TD
-    A["ORBA ECOSYSTEM (Sovereign & Agentic)"] --> B["Orba OS Mobile (Android App)"]
+    A["ORBA ECOSYSTEM (Sovereign & Agentic)"] --> D["Orba OS Website (Landing Page Showcase)"]
     A --> C["Orba OS Desktop (Tauri / FastAPI)"]
-    A --> D["Orba OS Website (Landing Page Showcase)"]
+    A --> B["Orba OS Mobile (Android App)"]
 
-    B --> B1["Local JNI C++ / Kotlin Inferences"]
-    B --> B2["Local Voice Synthesis (Piper JNI C++)"]
-    B --> B3["OrbaSphere AGSL Shaders UI"]
+    D --> D1["Local JNI C++ / Kotlin Inferences"]
+    D --> D2["Local Voice Synthesis (Piper JNI C++)"]
+    D --> D3["OrbaSphere AGSL Shaders UI"]
 
     C --> C1["Cognitive Loop ReAct (Python)"]
     C --> C2["Visualizer WebGL / Canvas"]
     C --> C3["Gateways (Local Mic, Telegram, WhatsApp)"]
 
-    D --> D1["Interactive Roadmap"]
-    D --> D2["Aesthetics V3 Glassmorphism"]
+    B --> B1["Interactive Roadmap"]
+    B --> B2["Aesthetics V3 Glassmorphism"]
 ```
-
 ---
 
 ### Ecosystem Projects
