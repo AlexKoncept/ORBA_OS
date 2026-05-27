@@ -44,8 +44,7 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 
 ### Architecture
 
-```mermaid
-graph TD;
+graph TD
     A["ORBA ECOSYSTEM (Sovereign & Agentic)"] --> D["Orba OS Website (Landing Page Showcase)"]
     A --> C["Orba OS Desktop (Tauri / FastAPI)"]
     A --> B["Orba OS Mobile (Android App)"]
@@ -60,7 +59,6 @@ graph TD;
 
     B --> B1["Interactive Roadmap"]
     B --> B2["Aesthetics V3 Glassmorphism"]
-```
 ---
 
 ### Ecosystem Projects
