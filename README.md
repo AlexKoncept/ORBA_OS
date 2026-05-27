@@ -46,20 +46,9 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 
 ```mermaid
 graph TD
-    A["ORBA ECOSYSTEM (Souverain & Agentique)"] --> B["Orba OS Mobile (Android App)"]
-    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
-    A --> D["Orba OS Website (Landing Page Showcase)"]
-
-    B --> B1["Modèle Local JNI C++ / Kotlin"]
-    B --> B2["Synthèse Vocale locale (Piper JNI)"]
-    B --> B3["OrbaSphere Mobile UI"]
-
-    C --> C1["Boucle Cognitive ReAct Python"]
-    C --> C2["Visualiseur WebGL / Canvas"]
-    C --> C3["Gateways (Micro local, Telegram, WhatsApp)"]
-
-    D --> D1["Roadmap Interactive"]
-    D --> D2["Aesthetics V3 Glassmorphism"]
+    A["ORBA ECOSYSTEM"] -->|Web| D["Website"]
+    A -->|Desktop| C["Desktop"]
+    A -->|Mobile| B["Mobile"]
 ```
 ---
 
@@ -170,20 +159,9 @@ Bienvenue dans l'écosystème **Orba OS**—une suite d'assistants personnels in
 
 ```mermaid
 graph TD
-    A["ORBA ECOSYSTEM (Souverain & Agentique)"] --> B["Orba OS Mobile (Android App)"]
-    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
-    A --> D["Orba OS Website (Landing Page Showcase)"]
-
-    B --> B1["Modèle Local JNI C++ / Kotlin"]
-    B --> B2["Synthèse Vocale locale (Piper JNI)"]
-    B --> B3["OrbaSphere Mobile UI"]
-
-    C --> C1["Boucle Cognitive ReAct Python"]
-    C --> C2["Visualiseur WebGL / Canvas"]
-    C --> C3["Gateways (Micro local, Telegram, WhatsApp)"]
-
-    D --> D1["Roadmap Interactive"]
-    D --> D2["Aesthetics V3 Glassmorphism"]
+    A["ORBA ECOSYSTEM"] -->|Web| D["Website"]
+    A -->|Desktop| C["Desktop"]
+    A -->|Mobile| B["Mobile"]
 ```
 
 ---
