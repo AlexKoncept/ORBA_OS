@@ -46,59 +46,20 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 
 ```mermaid
 graph TD
+    A["ORBA ECOSYSTEM (Souverain & Agentique)"] --> B["Orba OS Mobile (Android App)"]
+    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
+    A --> D["Orba OS Website (Landing Page Showcase)"]
 
-%% === CORE ===
-subgraph CORE["ORBA ECOSYSTEM (Sovereign & Agentic)"]
-    A[Orba Core]
-end
+    B --> B1["Modèle Local JNI C++ / Kotlin"]
+    B --> B2["Synthèse Vocale locale (Piper JNI)"]
+    B --> B3["OrbaSphere Mobile UI"]
 
-%% === CLIENT LAYER ===
-subgraph CLIENTS["Client Applications"]
-    D[Web Platform]
-    C[Desktop App]
-    B[Mobile App]
-end
+    C --> C1["Boucle Cognitive ReAct Python"]
+    C --> C2["Visualiseur WebGL / Canvas"]
+    C --> C3["Gateways (Micro local, Telegram, WhatsApp)"]
 
-%% === WEB ===
-subgraph WEB["Web Layer"]
-    D1[JNI C++ / Kotlin Inference]
-    D2["Voice Synthesis (Piper)"]
-    D3[AGSL Shader UI]
-end
-
-%% === DESKTOP ===
-subgraph DESKTOP["Desktop Layer"]
-    C1[Cognitive Loop ReAct]
-    C2[WebGL Visualizer]
-    C3[Gateways APIs]
-end
-
-%% === MOBILE ===
-subgraph MOBILE["Mobile Layer"]
-    B1[Interactive Roadmap]
-    B2[Glassmorphism UI]
-end
-
-%% === CORE LINKS ===
-A --> D
-A --> C
-A --> B
-
-%% === WEB LINKS ===
-D --> D1
-D --> D2
-D --> D3
-
-%% === DESKTOP LINKS ===
-C --> C1
-C --> C2
-C --> C3
-
-%% === MOBILE LINKS ===
-B --> B1
-B --> B2
-...
-```
+    D --> D1["Roadmap Interactive"]
+    D --> D2["Aesthetics V3 Glassmorphism"]
 
 ---
 
@@ -209,59 +170,20 @@ Bienvenue dans l'écosystème **Orba OS**—une suite d'assistants personnels in
 
 ```mermaid
 graph TD
+    A["ORBA ECOSYSTEM (Souverain & Agentique)"] --> B["Orba OS Mobile (Android App)"]
+    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
+    A --> D["Orba OS Website (Landing Page Showcase)"]
 
-%% === CORE ===
-subgraph CORE["ORBA ECOSYSTEM (Sovereign & Agentic)"]
-    A[Orba Core]
-end
+    B --> B1["Modèle Local JNI C++ / Kotlin"]
+    B --> B2["Synthèse Vocale locale (Piper JNI)"]
+    B --> B3["OrbaSphere Mobile UI"]
 
-%% === CLIENT LAYER ===
-subgraph CLIENTS["Client Applications"]
-    D[Web Platform]
-    C[Desktop App]
-    B[Mobile App]
-end
+    C --> C1["Boucle Cognitive ReAct Python"]
+    C --> C2["Visualiseur WebGL / Canvas"]
+    C --> C3["Gateways (Micro local, Telegram, WhatsApp)"]
 
-%% === WEB ===
-subgraph WEB["Web Layer"]
-    D1[JNI C++ / Kotlin Inference]
-    D2["Voice Synthesis (Piper)"]
-    D3[AGSL Shader UI]
-end
-
-%% === DESKTOP ===
-subgraph DESKTOP["Desktop Layer"]
-    C1[Cognitive Loop ReAct]
-    C2[WebGL Visualizer]
-    C3[Gateways APIs]
-end
-
-%% === MOBILE ===
-subgraph MOBILE["Mobile Layer"]
-    B1[Interactive Roadmap]
-    B2[Glassmorphism UI]
-end
-
-%% === CORE LINKS ===
-A --> D
-A --> C
-A --> B
-
-%% === WEB LINKS ===
-D --> D1
-D --> D2
-D --> D3
-
-%% === DESKTOP LINKS ===
-C --> C1
-C --> C2
-C --> C3
-
-%% === MOBILE LINKS ===
-B --> B1
-B --> B2
-...
-```
+    D --> D1["Roadmap Interactive"]
+    D --> D2["Aesthetics V3 Glassmorphism"]
 
 
 ---
