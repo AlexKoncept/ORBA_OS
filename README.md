@@ -49,8 +49,6 @@ graph TD
     A["ORBA ECOSYSTEM"] -->|Web| D["Website"]
     A -->|Desktop| C["Desktop"]
     A -->|Mobile| B["Mobile"]
-```
----
 
 ### Ecosystem Projects
 
@@ -162,9 +160,7 @@ graph TD
     A["ORBA ECOSYSTEM"] -->|Web| D["Website"]
     A -->|Desktop| C["Desktop"]
     A -->|Mobile| B["Mobile"]
-```
 
----
 
 ### Les Projets de l'Écosystème
 
