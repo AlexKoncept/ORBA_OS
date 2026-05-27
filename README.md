@@ -44,25 +44,58 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 
 ### Architecture
 
-```mermaid
 graph TD
-    A["ORBA ECOSYSTEM (Sovereign & Agentic)"] --> D["Orba OS Website (Landing Page Showcase)"]
-    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
-    A --> B["Orba OS Mobile (Android App)"]
 
-    D --> D1["Local JNI C++ / Kotlin Inferences"]
-    D --> D2["Local Voice Synthesis (Piper JNI C++)"]
-    D --> D3["OrbaSphere AGSL Shaders UI"]
+%% === CORE ===
+subgraph CORE["ORBA ECOSYSTEM (Sovereign & Agentic)"]
+    A[Orba Core]
+end
 
-    C --> C1["Cognitive Loop ReAct (Python)"]
-    C --> C2["Visualizer WebGL / Canvas"]
-    C --> C3["Gateways (Local Mic, Telegram, WhatsApp)"]
+%% === CLIENT LAYER ===
+subgraph CLIENTS["Client Applications"]
+    D[Web Platform]
+    C[Desktop App]
+    B[Mobile App]
+end
 
-    B --> B1["Interactive Roadmap"]
-    B --> B2["Aesthetics V3 Glassmorphism"]
-...
-```
+%% === WEB ===
+subgraph WEB["Web Layer"]
+    D1[JNI C++ / Kotlin Inference]
+    D2["Voice Synthesis (Piper)"]
+    D3[AGSL Shader UI]
+end
 
+%% === DESKTOP ===
+subgraph DESKTOP["Desktop Layer"]
+    C1[Cognitive Loop ReAct]
+    C2[WebGL Visualizer]
+    C3[Gateways APIs]
+end
+
+%% === MOBILE ===
+subgraph MOBILE["Mobile Layer"]
+    B1[Interactive Roadmap]
+    B2[Glassmorphism UI]
+end
+
+%% === CORE LINKS ===
+A --> D
+A --> C
+A --> B
+
+%% === WEB LINKS ===
+D --> D1
+D --> D2
+D --> D3
+
+%% === DESKTOP LINKS ===
+C --> C1
+C --> C2
+C --> C3
+
+%% === MOBILE LINKS ===
+B --> B1
+B --> B2
 ---
 
 ### Ecosystem Projects
