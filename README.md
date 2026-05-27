@@ -45,6 +45,7 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 ### Architecture
 
 ### Architecture
+
 ```mermaid
 graph TD
 
@@ -211,6 +212,7 @@ Bienvenue dans l'écosystème **Orba OS**—une suite d'assistants personnels in
 ---
 
 ### Architecture
+
 ```mermaid
 graph TD
 
