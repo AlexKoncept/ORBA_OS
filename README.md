@@ -45,22 +45,24 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 ### Architecture
 
 ```mermaid
-graph TD
+graph LR
 
-    A["ORBA Ecosystem"] --> B["Orba OS Mobile"]
-    A --> C["Orba OS Desktop"]
-    A --> D["Orba OS Website"]
+    A[ORBA Ecosystem]
 
-    B --> B1["JNI C++ Kotlin Inference"]
-    B --> B2["Local Voice Synthesis"]
-    B --> B3["OrbaSphere AGSL UI"]
+    A --> B[Mobile]
+    A --> C[Desktop]
+    A --> D[Web]
 
-    C --> C1["Cognitive Loop ReAct"]
-    C --> C2["WebGL Canvas Visualizer"]
-    C --> C3["Local and Messaging Gateways"]
+    B --> B1[Local AI]
+    B --> B2[Voice Engine]
+    B --> B3[Shader UI]
 
-    D --> D1["Interactive Roadmap"]
-    D --> D2["Glassmorphism UI"]
+    C --> C1[ReAct Loop]
+    C --> C2[Visualizer]
+    C --> C3[Gateways]
+
+    D --> D1[Roadmap]
+    D --> D2[Glass UI]
 ```
 ---
 
