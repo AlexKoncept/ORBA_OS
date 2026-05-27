@@ -62,6 +62,7 @@ graph TD
 
     B --> B1["Interactive Roadmap"]
     B --> B2["Aesthetics V3 Glassmorphism"]
+```
 
 ---
 
@@ -172,9 +173,9 @@ Bienvenue dans l'écosystème **Orba OS**—une suite d'assistants personnels in
 
 ```mermaid
 graph TD
-    A["ORBA ECOSYSTEM (Sovereign & Agentic)"] --> D["Orba OS Website (Landing Page Showcase)"]
+    A["ORBA ECOSYSTEM (Sovereign & Agentic)"] --> B["Orba OS Website (Landing Page Showcase)"]
     A --> C["Orba OS Desktop (Tauri / FastAPI)"]
-    A --> B["Orba OS Mobile (Android App)"]
+    A --> D["Orba OS Mobile (Android App)"]
 
     D --> D1["Local JNI C++ / Kotlin Inferences"]
     D --> D2["Local Voice Synthesis (Piper JNI C++)"]
@@ -186,6 +187,7 @@ graph TD
 
     B --> B1["Interactive Roadmap"]
     B --> B2["Aesthetics V3 Glassmorphism"]
+```
 
 ---
 
