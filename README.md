@@ -44,6 +44,7 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 
 ### Architecture
 
+```mermaid
 graph TD
 
 %% === CORE ===
@@ -96,6 +97,9 @@ C --> C3
 %% === MOBILE LINKS ===
 B --> B1
 B --> B2
+...
+```
+
 ---
 
 ### Ecosystem Projects
