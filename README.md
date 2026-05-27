@@ -44,11 +44,26 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 
 ### Architecture
 
+### Architecture
+
 ```mermaid
 graph TD
-    A["ORBA ECOSYSTEM"] -->|Web| D["Website"]
-    A -->|Desktop| C["Desktop"]
-    A -->|Mobile| B["Mobile"]
+    A["ORBA ECOSYSTEM (Sovereign & Agentic)"] --> D["Orba OS Website (Landing Page Showcase)"]
+    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
+    A --> B["Orba OS Mobile (Android App)"]
+
+    D --> D1["Local JNI C++ / Kotlin Inferences"]
+    D --> D2["Local Voice Synthesis (Piper JNI C++)"]
+    D --> D3["OrbaSphere AGSL Shaders UI"]
+
+    C --> C1["Cognitive Loop ReAct (Python)"]
+    C --> C2["Visualizer WebGL / Canvas"]
+    C --> C3["Gateways (Local Mic, Telegram, WhatsApp)"]
+
+    B --> B1["Interactive Roadmap"]
+    B --> B2["Aesthetics V3 Glassmorphism"]
+
+---
 
 ### Ecosystem Projects
 
@@ -157,10 +172,22 @@ Bienvenue dans l'écosystème **Orba OS**—une suite d'assistants personnels in
 
 ```mermaid
 graph TD
-    A["ORBA ECOSYSTEM"] -->|Web| D["Website"]
-    A -->|Desktop| C["Desktop"]
-    A -->|Mobile| B["Mobile"]
+    A["ORBA ECOSYSTEM (Sovereign & Agentic)"] --> D["Orba OS Website (Landing Page Showcase)"]
+    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
+    A --> B["Orba OS Mobile (Android App)"]
 
+    D --> D1["Local JNI C++ / Kotlin Inferences"]
+    D --> D2["Local Voice Synthesis (Piper JNI C++)"]
+    D --> D3["OrbaSphere AGSL Shaders UI"]
+
+    C --> C1["Cognitive Loop ReAct (Python)"]
+    C --> C2["Visualizer WebGL / Canvas"]
+    C --> C3["Gateways (Local Mic, Telegram, WhatsApp)"]
+
+    B --> B1["Interactive Roadmap"]
+    B --> B2["Aesthetics V3 Glassmorphism"]
+
+---
 
 ### Les Projets de l'Écosystème
 
