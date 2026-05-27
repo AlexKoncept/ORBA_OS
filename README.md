@@ -42,7 +42,6 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 
 ---
 
-### Architecture
 
 ### Architecture
 
