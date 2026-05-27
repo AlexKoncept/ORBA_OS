@@ -46,65 +46,9 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 
 ### Architecture
 
-```mermaid
-graph TD
-
-%% === CORE ===
-A["ORBA ECOSYSTEM"]
-
-%% === MAIN MODULES ===
-D["🌐 Website"]
-C["🖥️ Desktop"]
-B["📱 Mobile"]
-
-%% === MOBILE ===
-B1["JNI Inference"]
-B2["Voice (Piper)"]
-B3["Shader UI"]
-
-%% === DESKTOP ===
-C1["ReAct Loop"]
-C2["WebGL Visualizer"]
-C3["Gateways"]
-
-%% === WEBSITE ===
-D1["Roadmap"]
-D2["UI Glassmorphism"]
-
-%% === LINKS ===
-A --> D
-A --> C
-A --> B
-
-D --> D1
-D --> D2
-
-C --> C1
-C --> C2
-C --> C3
-
-B --> B1
-B --> B2
-B --> B3
-
-%% === STYLES ===
-classDef core fill:#0f172a,color:#ffffff,stroke:#38bdf8,stroke-width:2px;
-
-classDef web fill:#1e293b,color:#34d399,stroke:#34d399;
-
-classDef desktop fill:#1e293b,color:#38bdf8,stroke:#38bdf8;
-
-classDef mobile fill:#1e293b,color:#a78bfa,stroke:#a78bfa;
-
-classDef sub fill:#020617,color:#e2e8f0,stroke:#475569;
-
-%% === CLASSES ===
-class A core;
-
-class D,D1,D2 web;
-class C,C1,C2,C3 desktop;
-class B,B1,B2,B3 mobile;
-```
+<p align="center">
+  <img src="./Architecture.png" alt="Orba OS Architecture" width="650"/>
+</p>
 
 ---
 
@@ -213,65 +157,9 @@ Bienvenue dans l'écosystème **Orba OS**—une suite d'assistants personnels in
 
 ### Architecture
 
-```mermaid
-graph TD
-
-%% === CORE ===
-A["ORBA ECOSYSTEM"]
-
-%% === MAIN MODULES ===
-D["🌐 Website"]
-C["🖥️ Desktop"]
-B["📱 Mobile"]
-
-%% === MOBILE ===
-B1["JNI Inference"]
-B2["Voice (Piper)"]
-B3["Shader UI"]
-
-%% === DESKTOP ===
-C1["ReAct Loop"]
-C2["WebGL Visualizer"]
-C3["Gateways"]
-
-%% === WEBSITE ===
-D1["Roadmap"]
-D2["UI Glassmorphism"]
-
-%% === LINKS ===
-A --> D
-A --> C
-A --> B
-
-D --> D1
-D --> D2
-
-C --> C1
-C --> C2
-C --> C3
-
-B --> B1
-B --> B2
-B --> B3
-
-%% === STYLES ===
-classDef core fill:#0f172a,color:#ffffff,stroke:#38bdf8,stroke-width:2px;
-
-classDef web fill:#1e293b,color:#34d399,stroke:#34d399;
-
-classDef desktop fill:#1e293b,color:#38bdf8,stroke:#38bdf8;
-
-classDef mobile fill:#1e293b,color:#a78bfa,stroke:#a78bfa;
-
-classDef sub fill:#020617,color:#e2e8f0,stroke:#475569;
-
-%% === CLASSES ===
-class A core;
-
-class D,D1,D2 web;
-class C,C1,C2,C3 desktop;
-class B,B1,B2,B3 mobile;
-```
+<p align="center">
+  <img src="./Architecture.png" alt="Orba OS Architecture" width="650"/>
+</p>
 ---
 
 ### Les Projets de l'Écosystème
