@@ -133,6 +133,11 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 ### License
 This project is licensed under the **Apache License 2.0**. See the [LICENSE](./LICENSE) file for more information.
 
+##  Contact / Author
+Alex Koncept — contact@alexkoncept.com  
+Portfolio: https://alexkoncept.github.io/  
+If you find a vulnerability, please refer to SECURITY.md and contact contact@alexkoncept.com.
+
 ---
 ---
 
@@ -242,3 +247,8 @@ Bienvenue dans l'écosystème **Orba OS**—une suite d'assistants personnels in
 
 ### Licence
 Ce projet est distribué sous licence **Apache License 2.0**. Consultez le fichier [LICENSE](./LICENSE) pour plus d'informations.
+
+## Contact / Auteur
+Alex Koncept — contact@alexkoncept.com  
+Portfolio: https://alexkoncept.github.io/  
+Si vous trouvez une vulnérabilité, merci de consulter SECURITY.md et de contacter contact@alexkoncept.com
