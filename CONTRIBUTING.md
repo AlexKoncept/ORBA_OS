@@ -127,3 +127,26 @@ To ensure the consistency and quality of the ecosystem's code:
 - Follow PEP 8 standards for Python code (FastAPI).
 - Keep frontend code (WebGL / Canvas) optimized (pause the animation loop when the window is inactive).
 - Respect the Guardrails structure (critical system actions must always pass through the security orchestrator).
+
+Auteur / Author: Alex Koncept — contact@alexkoncept.com  
+Portfolio: https://alexkoncept.github.io/
+
+Voir aussi : CODE_OF_CONDUCT.md, SECURITY.md, .github/ISSUE_TEMPLATE/
+
+## Avant de proposer une modification
+- Ouvrez une issue pour discuter de la fonctionnalité ou du bug.
+- Assurez-vous de suivre le Code of Conduct.
+
+## Pull Requests
+- Fork -> branche descriptive -> PR vers main.
+- Incluez des tests si possible et mettez à jour le CHANGELOG.
+
+## Vérifications recommandées avant PR
+- Kotlin: ktlint / detekt selon la partie du code
+- Python: black, flake8, mypy
+- JS: eslint
+- Android: ./gradlew lint
+
+## Communication
+- Contact principal : contact@alexkoncept.com
+- Auteur: Alex Koncept — https://alexkoncept.github.io/

@@ -1,7 +1,7 @@
 # 🔮 The Orba Ecosystem / L'Écosystème Orba
 
 <p align="center">
-  <img src="./orba_ecosystem.webp" alt="Orba OS Banner" width="650"/>
+  <img src="./img/orba_os.png" alt="Orba OS Banner" width="650"/>
 </p>
 
 <p align="center">
@@ -42,12 +42,25 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 
 ---
 
-
 ### Architecture
 
-<p align="center">
-  <img src="./Architecture.png" alt="Orba OS Architecture" width="650"/>
-</p>
+```mermaid
+graph TD
+    A["ORBA ECOSYSTEM (Sovereign & Agentic)"] --> B["Orba OS Mobile (Android App)"]
+    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
+    A --> D["Orba OS Website (Landing Page Showcase)"]
+
+    B --> B1["Local JNI C++ / Kotlin Inferences"]
+    B --> B2["Local Voice Synthesis (Piper JNI C++)"]
+    B --> B3["OrbaSphere AGSL Shaders UI"]
+
+    C --> C1["Cognitive Loop ReAct (Python)"]
+    C --> C2["Visualizer WebGL / Canvas"]
+    C --> C3["Gateways (Local Mic, Telegram, WhatsApp)"]
+
+    D --> D1["Interactive Roadmap"]
+    D --> D2["Aesthetics V3 Glassmorphism"]
+```
 
 ---
 
@@ -71,10 +84,10 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
     *   **Multi-Channel Gateways**: Control and remote validation via WhatsApp (Twilio) and Telegram.
     *   **Vision Agent & Scheduler**: Screen analysis via Gemini 1.5 & Pillow, background task scheduler (`scheduled_tasks.json`), and async Windows Toast Notifications.
 
-#### 3. 🌐 [Orba OS Website](https://orba-website-byalexkoncept.netlify.app/)
+#### 3. 🌐 [Orba OS Website](./Orba_Ecosystem)
 *   **Platform**: Web (HTML5, Vanilla CSS, JS).
 *   **Objective**: Showcase web platform presenting the project, roadmap phases, and download links with a premium Glassmorphism design.
-*   **Link** : https://orbaproject-byalexkoncept.netlify.app/ 
+
 ---
 
 ### Sovereignty & Security Charter
@@ -133,6 +146,12 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 ### License
 This project is licensed under the **Apache License 2.0**. See the [LICENSE](./LICENSE) file for more information.
 
+## Contact / Author
+
+Alex Koncept — contact@alexkoncept.com  
+Portfolio: https://alexkoncept.github.io/  
+If you find a vulnerability, please refer to SECURITY.md and contact contact@alexkoncept.com.
+
 ---
 ---
 
@@ -156,9 +175,24 @@ Bienvenue dans l'écosystème **Orba OS**—une suite d'assistants personnels in
 
 ### Architecture
 
-<p align="center">
-  <img src="./Architecture.png" alt="Orba OS Architecture" width="650"/>
-</p>
+```mermaid
+graph TD
+    A["ORBA ECOSYSTEM (Souverain & Agentique)"] --> B["Orba OS Mobile (Android App)"]
+    A --> C["Orba OS Desktop (Tauri / FastAPI)"]
+    A --> D["Orba OS Website (Landing Page Showcase)"]
+
+    B --> B1["Inférences Locales JNI C++ / Kotlin"]
+    B --> B2["Synthèse Vocale locale (Piper JNI C++)"]
+    B --> B3["Rendu AGSL Shaders OrbaSphere"]
+
+    C --> C1["Boucle Cognitive ReAct (Python)"]
+    C --> C2["Visualiseur WebGL / Canvas"]
+    C --> C3["Passerelles (Micro local, Telegram, WhatsApp)"]
+
+    D --> D1["Roadmap Interactive"]
+    D --> D2["Esthétique Glassmorphism V3"]
+```
+
 ---
 
 ### Les Projets de l'Écosystème
@@ -181,10 +215,10 @@ Bienvenue dans l'écosystème **Orba OS**—une suite d'assistants personnels in
     *   **Passerelles Multi-Canaux** : Pilotage et validation d'actions à distance via WhatsApp (Twilio) et Telegram.
     *   **Vision & Planification** : Analyse d'écran via Gemini 1.5 & Pillow, planification de tâches d'arrière-plan (`scheduled_tasks.json`) et notifications Toast Windows natives.
 
-#### 3. 🌐 [Orba OS Website (Vitrine Web)](https://orba-website-byalexkoncept.netlify.app/)
+#### 3. 🌐 [Orba OS Website (Vitrine Web)](./Orba_Ecosystem)
 *   **Plateforme** : Web (HTML5, Vanilla CSS, JS).
 *   **Objectif** : Vitrine technologique interactive présentant le projet, sa feuille de route (Roadmap) et ses liens de téléchargement sous un style premium en Glassmorphism.
-*   **Lien** : https://orbaproject-byalexkoncept.netlify.app/ 
+
 ---
 
 ### Charte de Souveraineté & Sécurité
@@ -242,3 +276,9 @@ Bienvenue dans l'écosystème **Orba OS**—une suite d'assistants personnels in
 
 ### Licence
 Ce projet est distribué sous licence **Apache License 2.0**. Consultez le fichier [LICENSE](./LICENSE) pour plus d'informations.
+
+## Contact / Auteur
+
+Alex Koncept — contact@alexkoncept.com  
+Portfolio: https://alexkoncept.github.io/  
+Si vous trouvez une vulnérabilité, merci de consulter SECURITY.md et de contacter contact@alexkoncept.com.
