@@ -6,7 +6,7 @@
 
 ## 🇫🇷 Version Française
 
-**Orba OS** est un système d'intelligence personnelle souverain, modulaire et local conçu pour s'exécuter directement au-dessus d'Android. Inspiré par la vision d'un compagnon virtuel intime (comme dans le film *Her*), Orba OS est l'évolution directe du projet **Orba**. Il garantit une confidentialité absolue (Zero-Cloud, 100% Offline-First) et une réactivité matérielle maximale.
+**Orba OS** est un système d'intelligence personnelle souverain, modulaire et local conçu pour s'exécuter directement au-dessus d'Android. Inspiré par la vision d'un compagnon virtuel (comme dans le film *Her*), Orba OS est l'évolution directe du projet **Orba**. Il garantit une confidentialité absolue (Zero-Cloud, 100% Offline-First) et une réactivité matérielle maximale.
 
 ---
 
@@ -36,7 +36,7 @@ graph TD
 ```
 
 #### 1. Orba Core (Le Cerveau LLM)
-*   **Modèle** : Google Gemma-2B-IT (Instruction-tuned).
+*   **Modèle** : Google Gemma-E2B-IT (Instruction-tuned).
 *   **Technologie** : Inférence sémantique locale exécutée via **LiteRT** (anciennement TensorFlow Lite), optimisée pour exploiter les accélérateurs matériels mobiles (GPU/NPU).
 *   **Fichier clé** : `OrbaBrain.kt`
 
@@ -70,7 +70,7 @@ graph TD
 
 #### Configuration Minimale Requise :
 *   **OS Android** : Android 13.0 (API Level 33) ou supérieur (requis pour les shaders AGSL et les API audio).
-*   **Matériel** : Processeur Octa-core avec un minimum de **6 Go de RAM** (pour conserver Gemma-2B et le moteur Piper TTS chargés en mémoire sans interruption par le système OOM Killer).
+*   **Matériel** : Processeur Octa-core avec un minimum de **6 Go de RAM** (pour conserver Gemma-4 et le moteur Piper TTS chargés en mémoire sans interruption par le système OOM Killer).
 
 #### Déploiement & Compilation C++ :
 Pour compiler le projet depuis ses sources, vous devez installer dans **Android Studio** :
@@ -85,7 +85,7 @@ Pour compiler le projet depuis ses sources, vous devez installer dans **Android 
 L'APK généré par compilation est volontairement léger (~30Mo) pour optimiser les temps de build et de déploiement.
 Lors du premier lancement de l'application :
 1.  Un écran de garde `ModelDownloader` s'affiche et initie un téléchargement asynchrone sécurisé vers l'appareil.
-2.  **Modèle Gemma-2B-IT** : Téléchargement et quantisation en local (~2.5 Go).
+2.  **Modèle Gemma-E2B-IT** : Téléchargement et quantisation en local (~2.5 Go).
 3.  **Voix Piper (Français)** : Téléchargement du fichier `.onnx` de voix et de sa configuration `.json` (~50 Mo).
 4.  Les fichiers sont stockés dans le répertoire chiffré privé `context.filesDir` et chargés directement en RAM lors des lancements suivants.
 
@@ -105,7 +105,7 @@ Consultez le fichier `LICENSE` pour plus de détails.
 
 ## 🇬🇧 English Version
 
-**Orba OS** is a sovereign, modular, and local personal intelligence system designed to run directly on top of Android. Inspired by the vision of an intimate virtual companion (like in the movie *Her*), Orba OS is the direct evolution of the **Orba** project. It guarantees absolute privacy (Zero-Cloud, 100% Offline-First) and maximum hardware responsiveness.
+**Orba OS** is a sovereign, modular, and local personal intelligence system designed to run directly on top of Android. Inspired by the vision of a virtual companion (like in the movie *Her*), Orba OS is the direct evolution of the **Orba** project. It guarantees absolute privacy (Zero-Cloud, 100% Offline-First) and maximum hardware responsiveness.
 
 ---
 
@@ -135,7 +135,7 @@ graph TD
 ```
 
 #### 1. Orba Core (The LLM Brain)
-*   **Model**: Google Gemma-2B-IT (Instruction-tuned).
+*   **Model**: Google Gemma-E2B-IT (Instruction-tuned).
 *   **Technology**: Local semantic inference executed via **LiteRT** (formerly TensorFlow Lite), optimized to leverage mobile hardware accelerators (GPU/NPU).
 *   **Key File**: `OrbaBrain.kt`
 
@@ -169,7 +169,7 @@ graph TD
 
 #### Minimum Requirements:
 *   **Android OS**: Android 13.0 (API Level 33) or higher (required for AGSL shaders and audio APIs).
-*   **Hardware**: Octa-core processor with a minimum of **6 GB RAM** (to keep Gemma-2B and Piper TTS engine loaded in memory without being killed by the system OOM Killer).
+*   **Hardware**: Octa-core processor with a minimum of **6 GB RAM** (to keep Gemma-4 and Piper TTS engine loaded in memory without being killed by the system OOM Killer).
 
 #### Deployment & C++ Compilation:
 To compile the project from source, you must install in **Android Studio**:
@@ -184,7 +184,7 @@ To compile the project from source, you must install in **Android Studio**:
 The generated APK is lightweight (~30MB) to optimize build and deployment times.
 On first launch:
 1.  A `ModelDownloader` splash screen is shown and starts a secure asynchronous download to the device.
-2.  **Gemma-2B-IT Model**: Downloaded and quantized locally (~2.5 GB).
+2.  **Gemma-E2B-IT Model**: Downloaded and quantized locally (~2.5 GB).
 3.  **Piper Voice (French)**: Downloaded voice `.onnx` file and its `.json` configuration (~50 MB).
 4.  Files are stored in the private encrypted directory `context.filesDir` and loaded directly into RAM during subsequent launches.
 
