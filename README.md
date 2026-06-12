@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/Kotlin-1.9-purple.svg" alt="Kotlin"/>
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue.svg" alt="Python"/>
   <img src="https://img.shields.io/badge/Tauri-v2-FFC107.svg" alt="Tauri v2"/>
-  <img src="https://img.shields.io/badge/LiteRT-Gemma--2B-orange.svg" alt="LiteRT Gemma 2B"/>
+  <img src="https://img.shields.io/badge/LiteRT-Gemma--2B-orange.svg" alt="LiteRT Gemma 4"/>
 </p>
 
 <p align="center">
@@ -126,7 +126,7 @@ Welcome to the **Orba OS Ecosystem**—an intelligent personal assistant suite. 
 2. Install **CMake** and **NDK (Side-by-side)** via SDK Manager.
 3. Select the `demoDebug` build variant.
 4. Compile and install the APK on a device running Android 13.0 (API 33+) with at least **6GB RAM**.
-5. On the first launch, the `ModelDownloader` will download Gemma-2D-IT (~2.5GB) and the Piper voice model (~50MB) local files.
+5. On the first launch, the `ModelDownloader` will download gemma-4-E2B-it (~2.5GB) and the Piper voice model (~50MB) local files.
 
 ---
 
@@ -241,7 +241,7 @@ Bienvenue dans l'écosystème **Orba OS**—une suite d'assistants personnels in
 2. Configurez **CMake** et le **NDK** via le SDK Manager.
 3. Sélectionnez la variante de build `demoDebug`.
 4. Compilez et déployez sur un appareil Android 13.0 (API 33+) doté de **6 Go de RAM** minimum.
-5. Au premier boot, l'application effectue le téléchargement et la configuration locale de Gemma-2D-IT (~2.5 Go) et de la voix Piper (~50 Mo).
+5. Au premier boot, l'application effectue le téléchargement et la configuration locale de gemma-4-E2B-it (~2.5 Go) et de la voix Piper (~50 Mo).
 
 ---
 
