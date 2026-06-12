@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/Kotlin-1.9-purple.svg" alt="Kotlin"/>
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue.svg" alt="Python"/>
   <img src="https://img.shields.io/badge/Tauri-v2-FFC107.svg" alt="Tauri v2"/>
-  <img src="https://img.shields.io/badge/LiteRT-Gemma--2B-orange.svg" alt="LiteRT Gemma 4"/>
+  <img src="https://img.shields.io/badge/LiteRT-Gemma--4-orange.svg" alt="LiteRT Gemma 4"/>
 </p>
 
 <p align="center">
